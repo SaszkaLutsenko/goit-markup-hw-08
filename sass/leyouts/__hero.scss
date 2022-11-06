@@ -1,0 +1,111 @@
+.hero {
+    text-align: center;
+    color: var(--back-color);
+    background-color: var(--sbc);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/overlay.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+   
+                        
+
+
+    @media screen and (min-width: 300px) {
+            background-image: linear-gradient(to right,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                    url(../images/header-mob.jpg);
+
+                @media (min-device-pixel-ratio: 2),
+                    (min-resolution: 192dpi),
+                    (min-resolution: 2dppx) {
+                        background-image: linear-gradient(to right,
+                                rgba(47, 48, 58, 0.4),
+                                rgba(47, 48, 58, 0.4)),
+                            url(../images/header-mob-2x.jpg);
+                
+                    }
+        }
+    
+    
+    
+    
+        @media screen and (min-width: 481px) {
+            background-image: linear-gradient(to right,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                    url(../images/header-tab.jpg);
+
+                    @media (min-device-pixel-ratio: 2),
+                        (min-resolution: 192dpi),
+                        (min-resolution: 2dppx) {
+                            background-image: linear-gradient(to right,
+                                    rgba(47, 48, 58, 0.4),
+                                    rgba(47, 48, 58, 0.4)),
+                                url(../images/header-tab-2x.jpg);
+                    
+                        }
+        }
+    
+    
+    
+        @media screen and (min-width: 769px) {
+            background-image: linear-gradient(to right,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                    url(../images/overlay.jpg);
+                    
+                    @media (min-device-pixel-ratio: 2),
+                        (min-resolution: 192dpi),
+                        (min-resolution: 2dppx) {
+                            background-image: linear-gradient(to right,
+                                    rgba(47, 48, 58, 0.4),
+                                    rgba(47, 48, 58, 0.4)),
+                                url(../images/header-des-2x.jpg);
+                    
+                        }
+        }
+    
+
+}
+
+.hero__title {
+    
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    
+    letter-spacing: 0.06em;
+    color: var(--back-color);
+    letter-spacing: 0.06em;
+    margin-bottom: 30px;
+   max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+   
+@media screen and (min-width: 1200px) {
+            font-size: 44px;
+            line-height: 1.36;
+            max-width: 696px;
+    }
+
+           @media screen and (max-width: 480px) {
+                font-size: 7vw;
+           }
+}
+
+
+
+
+

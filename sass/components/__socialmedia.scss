@@ -1,0 +1,41 @@
+.soc__list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+
+}
+
+.soc__link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: currentColor;
+    color: var(--back-color);
+    fill: var(--soc-link);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+                color: var(--button-color);
+            }
+}
+
+.soc__icon {
+    fill: var(--soc-link);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .soc__link:hover>&,
+    .soc__link:focus>& {
+            fill: var(--back-color);
+    
+        }
+}
+
+
+
+
