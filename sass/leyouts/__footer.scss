@@ -9,7 +9,7 @@
             margin-top: 60px;
         }
 
-                @media screen and (min-width: 768px) and (max-width: 1200px) {
+                @media screen and (min-width: 769px) and (max-width: 1200px) {
                     margin-left: 165px;
         
                 }
@@ -52,6 +52,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+           
         }
 }
 .footer-logo-box{
@@ -160,6 +161,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            gap: 20px;
         }
 
 }
@@ -169,14 +171,14 @@
 .e-mail__border {
 
     box-sizing: border-box;
-    width: 358px;
+    width: 300px;
     height: 50px;
+    padding-left: 15px;
     background-color: var(--sbc);
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     margin: 0%;
-    padding-left: 16px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
@@ -185,10 +187,16 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 
-    @media screen and (max-width: 480px) {
-            width: 300px;
-            
+    @media screen and (min-width: 1200px) {
+            padding-left: 15px;
+            width: 358px;
         }
+
+                 @media screen and (min-width: 459px) {
+                     padding-left: 15px;
+                     width: 450px;
+                 }
+
                  
 }
 
@@ -224,6 +232,10 @@
             
         }
 
+}
+
+.site-logo__link--footer{
+    margin-bottom: 20px;
 }
 
 

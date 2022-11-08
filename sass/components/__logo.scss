@@ -14,11 +14,18 @@
             line-height: 1.2;
         }
 
-                  @media screen and (max-width: 767px) {
-                    padding-top: 16px;
-                    padding-bottom: 16px;
-                  }
+           
+    
 }
+
+.site-logo__link--top{
+    @media screen and (max-width: 767px) {
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+}
+
+ 
 
 .site-logo__text {
     margin: 0;
@@ -27,6 +34,13 @@
 .site-logo__text--black {
     color: var(--primery-text-colot);
     margin-right: 93px;
+
+    @media screen and (min-width: 767px) and (max-width: 1200px) {
+            
+    margin-right: 88px;
+    
+        }
+    
 }
 
 .site-logo__text--white {
