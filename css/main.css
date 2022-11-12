@@ -133,6 +133,9 @@ img {
 
 .site-logo__text--white {
   color: var(--back-color);
+}
+
+.site-logo__link--footer {
   margin-bottom: 20px;
 }
 
@@ -177,6 +180,9 @@ img {
 
 .site-logo__text--white {
   color: var(--back-color);
+}
+
+.site-logo__link--footer {
   margin-bottom: 20px;
 }
 
@@ -1093,7 +1099,7 @@ textarea {
 .hero__title {
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 26px;
+  font-size: 7vw;
   line-height: 1.61;
   letter-spacing: 0.06em;
   color: var(--back-color);
@@ -1110,9 +1116,9 @@ textarea {
     max-width: 696px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 360px) and (max-width: 1199px) {
   .hero__title {
-    font-size: 7vw;
+    font-size: 26px;
   }
 }
 
@@ -1167,6 +1173,13 @@ textarea {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+}
+@media screen and (max-width: 767px) {
+  .aspect-module__title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .aspect-module__text {
@@ -1281,7 +1294,12 @@ textarea {
   letter-spacing: 0.03em;
   color: var(--contact-color);
   background-color: var(--back-color);
-  padding-bottom: 30px;
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 1200px) {
+  .content-staff__posicion {
+    padding-bottom: 30px;
+  }
 }
 
 .content-staff__img {
@@ -1527,16 +1545,16 @@ textarea {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+@media screen and (min-width: 459px) and (max-width: 1199px) {
+  .e-mail__border {
+    padding-left: 15px;
+    width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .e-mail__border {
     padding-left: 15px;
     width: 358px;
-  }
-}
-@media screen and (min-width: 459px) {
-  .e-mail__border {
-    padding-left: 15px;
-    width: 450px;
   }
 }
 

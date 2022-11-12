@@ -94,7 +94,7 @@
     
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 26px;
+    font-size: 7vw;
     line-height: 1.61;
     
     letter-spacing: 0.06em;
@@ -111,8 +111,9 @@
             max-width: 696px;
     }
 
-           @media screen and (max-width: 480px) {
-                font-size: 7vw;
+           @media screen and (min-width: 360px) and (max-width: 1199px) {
+                font-size: 26px;
+
            }
 }
 

@@ -62,7 +62,11 @@
     letter-spacing: 0.03em;
     color: var(--contact-color);
     background-color: var(--back-color);
-    padding-bottom: 30px;
+    padding-bottom: 16px;
+
+    @media screen and (min-width: 1200px) {
+            padding-bottom: 30px;
+        }
 }
 
 .content-staff__img{

@@ -187,16 +187,16 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 
-    @media screen and (min-width: 1200px) {
-            padding-left: 15px;
-            width: 358px;
-        }
-
-                 @media screen and (min-width: 459px) {
+   
+                 @media screen and (min-width: 459px) and (max-width: 1199px) {
                      padding-left: 15px;
                      width: 450px;
                  }
 
+                                  @media screen and (min-width: 1200px) {
+                                      padding-left: 15px;
+                                      width: 358px;
+                                  }
                  
 }
 
