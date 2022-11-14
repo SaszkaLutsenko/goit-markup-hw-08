@@ -71,11 +71,11 @@
 
     <h1 class="visually hidden is">Portfolio</h1>
     <ul class="list portfolio">
-        <li class="iten"> <button type="button" class="btn--secondary"> Усі </button></li>
-        <li class="iten"> <button type="button" class="btn--secondary"> Веб-сайти </button></li>
-        <li class="iten"> <button type="button" class="btn--secondary"> Додатки </button></li>
-        <li class="iten"> <button type="button" class="btn--secondary"> Дизайн </button></li>
-        <li class="iten"> <button type="button" class="btn--secondary"> Маркетинг </button></li>
+        <li class="portfolio__iten"> <button type="button" class="btn--secondary"> Усі </button></li>
+        <li class="portfolio__iten"> <button type="button" class="btn--secondary"> Веб-сайти </button></li>
+        <li class="portfolio__iten"> <button type="button" class="btn--secondary"> Додатки </button></li>
+        <li class="portfolio__iten"> <button type="button" class="btn--secondary"> Дизайн </button></li>
+        <li class="portfolio__iten"> <button type="button" class="btn--secondary"> Маркетинг </button></li>
     </ul>
 
     <ul class="list choice">
@@ -83,7 +83,18 @@
             <div class="choice-item-imege">
             <div class="item-imege">
             <a href="#" class=" iten-box-link">
-               <img  src="./images/p1.jpg" width="370" alt="Технокряк"> 
+
+                <picture>
+                    <source srcset="./images/p1.jpg 1x, 
+                                      ./images/portfolio/img1-des-2x.jpg 2x," media="(min-width: 1200px)" />
+                    <source srcset="./images/portfolio/img1-tab.jpg 1x, 
+                                      ./images/portfolio/img1-tab-2x.jpg 2x," media="(min-width: 768px)" />
+                    <source srcset="./images/portfolio/img1-mob.jpg 1x, 
+                                      ./images/portfolio/img1-mob-2x.jpg 2x," media="(max-width: 767px)" />
+                
+                    <img src="./images/p1.jpg" width="370" alt="Технокряк">
+                </picture>
+               
                <p class="item-imege-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                 вичерпні відомості про компанію чи приватну особу.</p>
             </a>
@@ -99,7 +110,18 @@
         <div class="choice-item-imege">
              <div class="item-imege">
         <a href="#" class="iten-box-link item-imege">
-            <img src="./images/p2.jpg" width="370" alt="Постер New Orlean vs Golden Star"> 
+
+            <picture>
+                <source srcset="./images/p2.jpg 1x, 
+                                                  ./images/portfolio/img2-des-2x.jpg 2x," media="(min-width: 1200px)" />
+                <source srcset="./images/portfolio/img2-tab.jpg 1x, 
+                                                  ./images/portfolio/img2-tab-2x.jpg 2x," media="(min-width: 768px)" />
+                <source srcset="./images/portfolio/img2-mob.jpg 1x, 
+                                                  ./images/portfolio/img2-mob-2x.jpg 2x," media="(max-width: 767px)" />
+            
+                <img src="./images/p2.jpg" width="370" alt="Постер New Orlean vs Golden Star">
+            </picture>
+           
            <p class="item-imege-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
             дозволить відвідувачу отримати
             вичерпні відомості про компанію чи приватну особу.</p>
@@ -116,7 +138,21 @@
         <div class="choice-item-imege">
          <div class="item-imege">
         <a href="#" class="iten-box-link item-imege">
-            <img src="./images/p3.jpg" width="370" alt="Ресторан Seafood"> 
+
+            <picture>
+                <source srcset="./images/p3.jpg 1x, 
+                                                              ./images/portfolio/img3-des-2x.jpg 2x,"
+                    media="(min-width: 1200px)" />
+                <source srcset="./images/portfolio/img3-tab.jpg 1x, 
+                                                              ./images/portfolio/img3-tab-2x.jpg 2x," media="(min-width: 768px)" />
+                <source srcset="./images/portfolio/img3-mob.jpg 1x, 
+                                                              ./images/portfolio/img3-mob-2x.jpg 2x," media="(max-width: 767px)" />
+            
+                <img src="./images/p3.jpg" width="370" alt="Ресторан Seafood">
+            </picture>
+
+
+          
             <p class="item-imege-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                 дозволить відвідувачу отримати
                 вичерпні відомості про компанію чи приватну особу.</p>
@@ -133,7 +169,22 @@
         <div class="choice-item-imege">
          <div class="item-imege">
         <a href="#" class="iten-box-link item-imege">
-            <img src="./images/p4.jpg" width="370" alt="Проєкт Prime"> 
+
+
+            <picture>
+                <source srcset="./images/p4.jpg 1x, 
+                           ./images/portfolio/img4-des-2x.jpg 2x,"
+                    media="(min-width: 1200px)" />
+                <source srcset="./images/portfolio/img4-tab.jpg 1x, 
+                          ./images/portfolio/img4-tab-2x.jpg 2x,"
+                    media="(min-width: 768px)" />
+                <source srcset="./images/portfolio/img4-mob.jpg 1x, 
+                         ./images/portfolio/img4-mob-2x.jpg 2x,"
+                    media="(max-width: 767px)" />
+                <img src="./images/p4.jpg" width="370" alt="Проєкт Prime">
+                
+            </picture>
+        
             <p class="item-imege-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
             дозволить відвідувачу отримати
             вичерпні відомості про компанію чи приватну особу.</p>
@@ -150,7 +201,18 @@
         <div class="choice-item-imege">
          <div class="item-imege">
         <a href="#" class="iten-box-link item-imege">
-            <img src="./images/p5.jpg" width="370" alt="Проєкт Boxes"> 
+
+            <picture>
+                <source srcset="./images/p5.jpg 1x, 
+                                       ./images/portfolio/img5-des-2x.jpg 2x," media="(min-width: 1200px)" />
+                <source srcset="./images/portfolio/img5-tab.jpg 1x, 
+                                      ./images/portfolio/img5-tab-2x.jpg 2x," media="(min-width: 768px)" />
+                <source srcset="./images/portfolio/img5-mob.jpg 1x, 
+                                     ./images/portfolio/img5-mob-2x.jpg 2x," media="(max-width: 767px)" />
+                <img src="./images/p5.jpg" width="370" alt="Проєкт Boxes">
+            
+            </picture>
+            
         <p class="item-imege-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
             дозволить відвідувачу отримати
             вичерпні відомості про компанію чи приватну особу.</p>
@@ -167,7 +229,18 @@
         <div class="choice-item-imege">
          <div class="item-imege">
         <a href="#" class="iten-box-link item-imege">
-            <img src="./images/p6.jpg" width="370" alt="Inspiration has no Borders"> 
+
+            <picture>
+                <source srcset="./images/p6.jpg 1x, 
+                   ./images/portfolio/img6-des-2x.jpg 2x," media="(min-width: 1200px)" />
+                <source srcset="./images/portfolio/img6-tab.jpg 1x, 
+                  ./images/portfolio/img6-tab-2x.jpg 2x," media="(min-width: 768px)" />
+                <source srcset="./images/portfolio/img6-mob.jpg 1x, 
+                    ./images/portfolio/img6-mob-2x.jpg 2x," media="(max-width: 767px)" />
+                <img src="./images/p6.jpg" width="370" alt="Inspiration has no Borders">
+            
+            </picture>
+             
             <p class="item-imege-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
             дозволить відвідувачу отримати
             вичерпні відомості про компанію чи приватну особу.</p>
@@ -184,7 +257,18 @@
         <div class="choice-item-imege">
          <div class="item-imege"> 
             <a href="#" class="iten-box-link item-imege">
-            <img src="./images/p7.jpg" width="370" alt="Видання Limited Edition"> 
+
+                <picture>
+                    <source srcset="./images/p7.jpg 1x, 
+                                   ./images/portfolio/img7-des-2x.jpg 2x," media="(min-width: 1200px)" />
+                    <source srcset="./images/portfolio/img7-tab.jpg 1x, 
+                                  ./images/portfolio/img7-tab-2x.jpg 2x," media="(min-width: 768px)" />
+                    <source srcset="./images/portfolio/img7-mob.jpg 1x, 
+                                    ./images/portfolio/img7-mob-2x.jpg 2x," media="(max-width: 767px)" />
+                    <img src="./images/p7.jpg" width="370" alt="Видання Limited Edition">
+                
+                </picture>
+            
             <p class="item-imege-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
              дозволить відвідувачу отримати
              вичерпні відомості про компанію чи приватну особу.</p>
@@ -201,7 +285,18 @@
         <div class="choice-item-imege">
          <div class="item-imege">
         <a href="#" class="iten-box-link item-imege">
-            <img src="./images/p8.jpg" width="370" alt="Проєкт LAB"> 
+
+                            <picture>
+                                <source srcset="./images/p8.jpg 1x, 
+                                       ./images/portfolio/img8-des-2x.jpg 2x," media="(min-width: 1200px)" />
+                                <source srcset="./images/portfolio/img8-tab.jpg 1x, 
+                                      ./images/portfolio/img8-tab-2x.jpg 2x," media="(min-width: 768px)" />
+                                <source srcset="./images/portfolio/img8-mob.jpg 1x, 
+                                       ./images/portfolio/img8-mob-2x.jpg 2x," media="(max-width: 767px)" />
+                    <img src="./images/p8.jpg" width="370" alt="Проєкт LAB">
+                            
+                            </picture>
+           
             <p class="item-imege-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
             дозволить відвідувачу отримати
             вичерпні відомості про компанію чи приватну особу.</p>
@@ -218,7 +313,18 @@
         <div class="choice-item-imege">
          <div class="item-imege">
         <a href="#" class="iten-box-link item-imege">
-            <img src="./images/p9.jpg" width="370" alt="Growing Business"> 
+
+            <picture>
+                <source srcset="./images/p9.jpg 1x, 
+                               ./images/portfolio/img9-des-2x.jpg 2x," media="(min-width: 1200px)" />
+                <source srcset="./images/portfolio/img9-tab.jpg 1x, 
+                                  ./images/portfolio/img9-tab-2x.jpg 2x," media="(min-width: 768px)" />
+                <source srcset="./images/portfolio/img9-mob.jpg 1x, 
+                               ./images/portfolio/img9-mob-2x.jpg 2x," media="(max-width: 767px)" />
+                <img src="./images/p9.jpg" width="370" alt="Growing Business">
+            
+            </picture>
+          
     <p class="item-imege-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
         дозволить відвідувачу отримати
         вичерпні відомості про компанію чи приватну особу.</p>

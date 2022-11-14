@@ -1588,28 +1588,58 @@ textarea {
 
 .list.portfolio {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .list.portfolio {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list.portfolio {
+    margin-bottom: 50px;
+  }
 }
 
-.list.portfolio .iten {
-  margin-right: 8px;
+.list.portfolio .portfolio__iten {
+  gap: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
-.list.portfolio .iten .iten:nth-child(5n) {
-  margin: 0;
+
+.portfolio__iten {
+  gap: 8px;
 }
 
 .list.choice {
   color: var(--primery-text-colot);
   display: flex;
   flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
+  gap: 30px;
 }
-.list.choice .iten-box {
-  margin-left: 30px;
-  margin-top: 30px;
-  flex-basis: calc(33.3333333333% - 30px);
+
+.iten-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 480px) {
+  .iten-box {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .iten-box {
+    width: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .iten-box {
+    width: calc((100% - 90px) / 3);
+  }
 }
 
 .choice.title {

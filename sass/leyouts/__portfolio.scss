@@ -1,17 +1,40 @@
 .list.portfolio {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-right: auto;
+
+@media screen and (min-width: 768px) {
+
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+
+
+
+    @media screen and (min-width: 1200px) {
+
+        margin-bottom: 50px;
+    }
+
 }
 
-.list.portfolio .iten {
+.list.portfolio .portfolio__iten {
+gap: 8px;
+display: flex;
+flex-wrap: wrap;
+margin-bottom: 40px ;
 
-    margin-right: 8px;
+   
+    
 
-    & .iten:nth-child(5n) {
-            margin: 0;
-        }
 }
+
+.portfolio__iten{
+    gap: 8px;
+}
+
+
 
 
 
@@ -19,14 +42,34 @@
     color: var(--primery-text-colot);
     display: flex;
     flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -30px;
+    gap: 30px;
 
-     .iten-box {
-            margin-left: 30px;
-            margin-top: 30px;
-            flex-basis: calc(100% / 3 - 30px);
-        }
+    
+
+           
+}
+
+
+.iten-box{
+    display: flex;
+    flex-wrap: wrap;
+
+        @media screen and (min-width: 480px) {
+                width: 100%;
+            }
+        
+        
+        
+        
+            @media screen and (min-width: 768px) {
+                width: calc((100% - 60px) / 2);
+            }
+        
+        
+        
+            @media screen and (min-width: 1200px) {
+                width: calc((100% - 90px) / 3);
+            }
 }
 
 
